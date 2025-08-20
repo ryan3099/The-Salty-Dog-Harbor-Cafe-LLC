@@ -1,67 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Salty Dog Harbor Cafe LLC</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+    :root{
+      --brown:#5a3825;
+      --yellow:#f2c200;
+      --dark:#1a1a1a;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
+    body{margin:0;font-family:Arial, sans-serif;background:var(--dark);color:#fff;}
+    header{background:var(--brown);color:#fff;text-align:center;padding:25px;border-bottom:4px solid var(--yellow);}
+    header h1{margin:0;font-size:2.5em;}
+    header p{margin:8px 0 0;font-size:1.1em;}
+    nav{background:#111;text-align:center;padding:12px;}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold;}
+    nav a:hover{color:var(--yellow);}
+    .hero{text-align:center;padding:40px;background:#2a2a2a;}
+    .hero img{max-width:80%;border-radius:12px;border:4px solid var(--yellow);}
+    .section{padding:30px;margin:20px;background:#2a2a2a;border-radius:8px;border:2px solid var(--brown);}
+    .section h2{color:var(--yellow);}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit, minmax(220px,1fr));gap:15px;margin-top:20px;}
+    .gallery img{width:100%;border-radius:8px;border:2px solid var(--yellow);}
+    footer{background:var(--brown);text-align:center;padding:16px;margin-top:20px;border-top:4px solid var(--yellow);}
+    footer p{margin:5px;}
   </style>
 </head>
 <body>
+
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>The Salty Dog Harbor Cafe LLC</h1>
+    <p>Selling Mini Coffee Shop Décor and Material</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <div class="hero">
+    <img src="https://i.pinimg.com/736x/07/5d/e7/075de727071273f3779cbad9241a4463.jpg" alt="Coffee Shop Hero">
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p><strong>The Salty Dog Harbor Cafe LLC</strong> is your trusted partner for <em>mini coffee shop décor and material supply</em>. 
+    From cozy seating to stylish serving counters, we specialize in providing all the essentials to set up your dream café.</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Mini Coffee Shop Décor Sales</li>
+      <li>Material & Equipment Supply</li>
+      <li>Custom Design Support</li>
+      <li>Outdoor & Indoor Café Solutions</li>
+      <li>Fast Delivery & Installation Assistance</li>
+    </ul>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://p.turbosquid.com/ts-thumb/E3/Bajv1s/2bUyP5MR/01/jpg/1474113910/1920x1080/fit_q99/c98d801a4eae77d15292ce9e8a6f525cb07e5f9a/01.jpg" alt="Gallery 1">
+      <img src="https://avatars.mds.yandex.net/i?id=9976928bff07d8ef3103f2d54f654cf3_l-9150989-images-thumbs&ref=rim&n=13&w=1000&h=750" alt="Gallery 2">
+      <img src="https://metal-mangal.ru/image/catalog/goods/Besedki/830000/23.png" alt="Gallery 3">
     </div>
-  </section>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>☎ Phone: 19039129417</p>
+    <p>✉ Email: <a href="mailto:contact@tsdcafe.shop" style="color:var(--yellow);">contact@tsdcafe.shop</a></p>
+    <p>📍 Location: Harbor Area, USA</p>
+  </div>
 
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>&copy; 2025 The Salty Dog Harbor Cafe LLC</p>
+    <p>Mini Coffee Shop Décor & Material Services</p>
   </footer>
+
 </body>
 </html>
